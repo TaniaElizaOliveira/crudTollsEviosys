@@ -1,0 +1,130 @@
+{
+	"env": {
+		"node": true
+	},
+	"extends": [
+		"plugin:vue/essential",
+		"eslint:recommended"
+	],
+	"plugins": [
+		"only-warn"
+	],
+	"parserOptions": {
+		"parser": "babel-eslint"
+	},
+	"overrides": [
+		{
+			"files": [
+				"*/_tests_/.{j,t}s?(x)",
+				"*/tests/unit//.spec.{j,t}s?(x)"
+			],
+			"env": {
+				"jest": true
+			}
+		},
+		{
+			"files": ["*.vue"],
+			"rules": {
+				"indent": "off"
+			}
+		}
+	],
+	"rules": {
+		"no-fallthrough": "warn",
+		"arrow-parens": "off",
+		"no-console": "off",
+		"no-undef": "off",
+		"no-empty": "off",
+		"sort-keys": "off",
+		"sort-vars": "off",
+		"quotes": [
+			"warn",
+			"double",
+			{
+				"avoidEscape": true
+			}
+		],
+		"no-trailing-spaces": "warn",
+		"comma-dangle": [
+			"warn",
+			"never"
+		],
+		"no-mixed-spaces-and-tabs": [
+			"warn",
+			"smart-tabs"
+		],
+		"keyword-spacing": "warn",
+		"space-before-function-paren": [
+			"warn",
+			"always"
+		],
+		"semi": [
+			"warn",
+			"always"
+		],
+		"indent": [
+			"warn",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"vue/script-indent": [
+			"warn",
+			"tab",
+			{
+				"baseIndent": 1,
+				"switchCase": 1
+			}
+		],
+		"no-irregular-whitespace": "warn",
+		"no-whitespace-before-property": "warn",
+		"no-multi-spaces": "warn",
+		"space-infix-ops": "warn",
+		"space-unary-ops": "warn",
+		"space-before-blocks": "warn",
+		"func-call-spacing": [
+			"warn",
+			"never"
+		],
+		"no-unused-vars": "off",
+		"no-unused-labels": "warn",
+		"no-unused-expressions": "warn",
+		"no-unreachable": "warn",
+		"prefer-const": "warn",
+		"no-const-assign": "warn",
+		"no-var": "warn",
+		"no-new-object": "warn",
+		"object-shorthand": [
+			"warn",
+			"always"
+		],
+		"quote-props": [
+			"warn",
+			"as-needed"
+		],
+		"no-array-constructor": "warn",
+		"array-callback-return": "warn",
+		"no-eval": "warn",
+		"no-useless-escape": "warn",
+		"no-new-func": "warn",
+		"prefer-spread": "warn",
+		"prefer-arrow-callback": "warn",
+		"arrow-spacing": "warn",
+		"arrow-body-style": [
+			"warn",
+			"as-needed"
+		],
+		"no-confusing-arrow": "off",
+		"implicit-arrow-linebreak": [
+			"warn",
+			"beside"
+		],
+		"no-useless-constructor": "warn",
+		"no-dupe-class-members": "warn",
+		"no-duplicate-imports": "warn",
+		"dot-notation": "warn",
+		"no-unneeded-ternary": "warn",
+		"no-mixed-operators": "off"
+	}
+}
